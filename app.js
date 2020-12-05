@@ -1,4 +1,8 @@
 // scroll jquery
+$(document).ready(function(){
+    $(this).scrollTop(0);
+});
+
 $(window).scroll(function () {
     if ($(this).scrollTop() > 50) {
         $('#back-to-top').fadeIn();
