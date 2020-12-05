@@ -1,6 +1,6 @@
 // scroll jquery
-$(document).ready(function(){
-    $(this).scrollTop(0);
+$(window).on('beforeunload', function() {
+    $(window).scrollTop(0);
 });
 
 $(window).scroll(function () {
