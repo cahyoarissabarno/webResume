@@ -1,0 +1,112 @@
+/* Transisi */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate(10%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+.photo, .menu {
+  opacity: 0;
+  animation: fadeInUp 1s ease-in-out 0s forwards;
+  animation-delay: 1s;
+}
+.blockquote{
+  opacity: 0;
+  animation: fadeInUp 1s ease-in-out 0s forwards;
+  animation-delay: 2s;
+}
+#knowMore{
+  opacity: 0;
+  animation: fadeInUp 1s ease-in-out 0s forwards;
+  animation-delay: 3s;
+}
+
+/* main css */
+body{
+  /* background-color: #EFEFEF; */
+  /* background-color: #E6EFFF; */
+  background-image: url('./bg-blue-3.jpg');
+  background-size: cover;
+  font-family: ""Arial Black", Gadget, sans-serif";
+}
+.nav-link{
+  box-shadow: 4px 4px 8px rgba(38, 50, 80,0.4);
+  border-radius: 20px !important;
+  transition: all 0.3s ease 0s;
+}
+.nav-link:hover, .nav-link:focus{
+  background-color: #263250;
+  box-shadow: 0px 10px 10px rgba(38, 50, 80, 0.4);
+  color: #fff;
+  transform: translateY(-3px);
+  outline: none;
+}
+.text-page{
+  border-radius: 13px;
+  box-shadow: 4px 4px 8px rgba(38, 50, 80,0.4);
+  background-color: rgb(38, 50, 80);
+  opacity: 0;
+  animation: fadeInUp 1s ease-in-out 0s forwards;
+  animation-delay: 1s;
+  max-height: 500px;
+}
+.item {
+  margin: 0 auto;
+  padding: 1em;
+  position: relative;
+  max-width: 320px;
+  height: 400px;
+  overflow: hidden;
+}
+.item .img-wrap:before {
+  content: '';
+  background-image: linear-gradient(to top, rgba(38, 50, 80, 255), rgba(38, 50, 80,0.2));
+  position: absolute;
+  height: 100px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.item .img-wrap:after {
+  content: '';
+  display: block;
+  height: 9999px;
+}
+.img-wrap img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+}
+.photo{
+  box-shadow: 8px 8px 10px rgba(38, 50, 80,0.4);
+  border-radius: 30px;
+  background-color: rgb(38, 50, 80);
+  border-top: 4px solid #ededed;
+  border-left: 4px solid #ededed;
+}
+.title{
+  color: #263250; 
+  border-radius: 20px;
+}
+.contact-icon{
+  background-color: #263250; 
+  border-radius: 50px;
+}
+.contact{
+  border-radius: 100px;
+}
+.contact > span{
+  color: #263250;
+}
+.back-to-top {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  display: none;
+}
+
