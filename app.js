@@ -1,5 +1,5 @@
 // scroll jquery
-$(window).on('beforeunload', function() {
+$(window).on('unload', function() {
     $(window).scrollTop(0);
 });
 
