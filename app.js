@@ -1,8 +1,4 @@
 // scroll jquery
-$(window).on('unload', function() {
-    $(window).scrollTop(0);
-});
-
 $(window).scroll(function () {
     if ($(this).scrollTop() > 50) {
         $('#back-to-top').fadeIn();
@@ -38,6 +34,7 @@ new Vue({
     },
     mounted(){
       this.aboutMeOpen = true
+      $("#back-to-top").click();
       $(".aboutMeBtn").focus();
       $("html").click(function(){
         $(".aboutMeBtn").focus();
