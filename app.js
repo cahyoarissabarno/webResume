@@ -1,4 +1,10 @@
 // scroll jquery
+$.fn.focusWithoutScrolling = function(){
+    var x = window.scrollX, y = window.scrollY;
+    this.focus();
+    window.scrollTo(x, y);
+};
+
 $(window).scroll(function () {
     if ($(this).scrollTop() > 50) {
         $('#back-to-top').fadeIn();
@@ -34,8 +40,7 @@ new Vue({
     },
     mounted(){
       this.aboutMeOpen = true
-      $("#back-to-top").click();
-      $(".aboutMeBtn").focus();
+      $('.aboutMeBtn').focusWithoutScrolling();
       $("html").click(function(){
         $(".aboutMeBtn").focus();
       });
