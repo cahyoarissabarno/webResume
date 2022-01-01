@@ -7,14 +7,14 @@
     <link rel="icon" href="./logo.png">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     
     <!-- jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <!-- Eksternal Css -->
     <link rel="stylesheet" href="./style.css">
@@ -67,9 +67,8 @@
             <!-- AboutMe -->
             <div class="col p-5 overflow-auto text-page text-light" v-show="aboutMeOpen">
               <p>Hello, I'm Cahyo. I am a person who likes to learn new things and challenges. I will try my best to be able to achieve what I want. 
-                I am a Computer Engineering student at Politeknik Elektronika Negeri Surabaya (PENS), and very interested in web development, 
-                especially laravel and WordPress. Therefore, I am currently joining the web master team at my campus. Besides that, 
-                I am also interested in creative things, such as video editing.</p>
+                I am a Computer Engineering student at Politeknik Elektronika Negeri Surabaya (PENS), and very interested in web development. 
+                Besides that, I am also interested in creative things</p>
               <h5 class="bg-light px-3 py-1 title">Profile</h5>
               <table class="ml-4 w-100">
                 <tr>
@@ -92,19 +91,13 @@
 
             <!-- experience -->
             <div class="col pr-5 pt-5 pb-4 overflow-auto text-page text-light" v-show="experienceOpen">
-              <ul>
+              <ul class="mx-3">
                 <li class="mb-2">
                   <h6 class="bg-light px-3 py-1 title">Web Master in ENT (2019 - Now)</h6>
                   <small>
                     ENT (EEPIS NEWS AND NETWORK TEAM) is a team that helps colleges to manage all media information and manage colleges network. 
                     WebMaster is a division in ENT that help to maintenance campuses website. ENT also have official websites that I improve and maintain.
-                  </small>
-                </li>
-                <li class="mb-2">
-                  <h6 class="bg-light px-3 py-1 title">SNMPN Administrator (2020)</h6>
-                  <small>
-                    SNMPN is a registration platform for fresh graduates from high school to vocational college. In this team, 
-                    I help to update some things on the official website and as a call center that helps participants to register.
+                    Know more at <a href="https://ent.pens.ac.id/" target="_blank">https://ent.pens.ac.id/</a>
                   </small>
                 </li>
                 <li class="mb-2">
@@ -114,11 +107,19 @@
                     In this competition, My website that's built using Laravel & Bootstrap was won in the Web Development category.
                   </small>
                 </li>
+                <li class="mb-2">
+                  <h6 class="bg-light px-3 py-1 title">Back End Developer Intern at Digiflux</h6>
+                  <small>
+                    Digiflux is a startup that connects influencers and brands. in this 3 months
+                    internship, I am responsible to improve their website platform using laravel. 
+                    I get an award in this internship as "The Most Responsible Intern".
+                  </small>
+                </li>
               </ul>
             </div>
 
             <!-- skills -->
-            <div class="col p-5 text-page overflow-auto text-light" v-show="skillsOpen">
+            <div class="col p-5 text-page overflow-auto text-light text-center" v-show="skillsOpen">
               <h4 class="bg-light px-3 py-1 title">Skills</h4>
               <table class="ml-4 w-100">
                 <tr>
@@ -138,15 +139,7 @@
                   </td>
                 </tr>
                 <tr>
-                  <td><b>Wordpress</b></td>
-                  <td>
-                    <small>
-                      <i class="fas fa-circle"></i> <i class="fas fa-circle"></i> <i class="fas fa-circle"></i> <i class="fas fa-circle"></i> <i class="fas fa-circle text-muted"></i>
-                    </small>
-                  </td>
-                </tr>
-                <tr>
-                  <td><b>Javascript</b></td>
+                  <td><b>Node JS</b></td>
                   <td>
                     <small>
                       <i class="fas fa-circle"></i> <i class="fas fa-circle"></i> <i class="fas fa-circle"></i> <i class="fas fa-circle text-muted"></i> <i class="fas fa-circle text-muted"></i>
@@ -154,7 +147,15 @@
                   </td>
                 </tr>
                 <tr>
-                  <td><b>My SQL</b></td>
+                  <td><b>Vue JS</b></td>
+                  <td>
+                    <small>
+                      <i class="fas fa-circle"></i> <i class="fas fa-circle"></i> <i class="fas fa-circle"></i> <i class="fas fa-circle text-muted"></i> <i class="fas fa-circle text-muted"></i>
+                    </small>
+                  </td>
+                </tr>
+                <tr>
+                  <td><b>My SQL & Mongo DB</b></td>
                   <td>
                     <small>
                       <i class="fas fa-circle"></i> <i class="fas fa-circle"></i> <i class="fas fa-circle"></i> <i class="fas fa-circle text-muted"></i> <i class="fas fa-circle text-muted"></i>
@@ -165,42 +166,63 @@
               
               <br>
 
-              <h4 class="bg-light px-3 py-1 title">Language</h4>
-              <table class="ml-4 w-100">
-                <tr>
-                  <td><b>Indonesian</b></td>
-                  <td>
-                    <small>
-                      <i class="fas fa-circle"></i> <i class="fas fa-circle"></i> <i class="fas fa-circle"></i> <i class="fas fa-circle"></i> <i class="fas fa-circle"></i>
-                    </small>
-                  </td>
-                </tr>
-                <tr>
-                  <td><b>Javanese</b></td>
-                  <td>
-                    <small>
-                      <i class="fas fa-circle"></i> <i class="fas fa-circle"></i> <i class="fas fa-circle"></i> <i class="fas fa-circle"></i> <i class="fas fa-circle"></i>
-                    </small>
-                  </td>
-                </tr>
-                <tr>
-                  <td><b>English</b></td>
-                  <td>
-                    <small>
-                      <i class="fas fa-circle"></i> <i class="fas fa-circle"></i> <i class="fas fa-circle"></i> <i class="fas fa-circle text-muted"></i> <i class="fas fa-circle text-muted"></i>
-                    </small>
-                  </td>
-                </tr>
-              </table>
+              <h4 class="bg-light px-3 py-1 title">Portofolio Web</h4>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn mt-3 btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <b>Show Me</b>
+              </button>
+              </div>
             </div>
 
             <!-- contact -->
             <div class="col px-sm-5 px-3 pt-5 pb-4 overflow-auto text-page text-light" v-show="contactOpen">
-              <h6 class="bg-light p-1 contact"><i class="fas fa-phone-alt contact-icon p-3"></i><span> +6285646222472</span></h6>
+              <h6 class="bg-light p-1 contact"><i class="fab fa-linkedin-in contact-icon p-3"></i><span> linkedin.com/in/cahyo-arissabarno</span></h6>
               <h6 class="bg-light p-1 contact"><i class="fab fa-whatsapp contact-icon p-3"></i><span> +6285646222472</span></h6>
               <h6 class="bg-light p-1 contact"><i class="far fa-envelope contact-icon p-3"></i><span> cahyoarissabarno@gmail.com</span></h6>
               <h6 class="bg-light p-1 contact"><i class="fab fa-github contact-icon p-3"></i><span> github.com/cahyoarissabarno</span></h6>
               <h6 class="bg-light p-1 contact"><i class="fab fa-instagram contact-icon p-3"></i><span> cahyo_a28</span></h6>
+            </div>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModal" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header" style="background-color: #263250; color: whitesmoke;">
+                    <h5 class="modal-title" id="exampleModalCenteredScrollableTitle">Portofolio Web</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="background-color: white; opacity: 1;"></button>
+                  </div>
+                  <div class="modal-body" style="background-color: rgb(242, 242, 242);">
+                    <div class="card mx-3 mb-5 mt-3 shadow">
+                      <img src="./cinematec.png" class="card-img-top">
+                      <div class="card-body">
+                        <h5 class="card-title">Cinematec [ <a href="http://47.254.201.21" target="_blank">http://47.254.201.21</a> ]</h5>
+                        <small class="card-text">
+                          News Portal Websites that contains article or news about technology in the hollywood movie industry. 
+                          This website was built using Laravel on Back End and Bootstrap on the Front End.
+                        </small>
+                      </div>
+                    </div>
+                    <div class="card mx-3 mb-5 shadow">
+                      <img src="./egg.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Egg Cracker [ <a href="https://eggcracker.site" target="_blank">https://eggcracker.site</a> ]</h5>
+                        <small class="card-text">
+                          Websites that connect to IoT Egg Incubator Devices to Monitor Temperature and Humidity that help farmers.
+                          I'm build API for this website using Express JS & Node JS to connect websites, Databse, and IoT devices. 
+                          Using Bootstrap in the Front End and Integrated with API using Vue JS. 
+                        </small>
+                      </div>
+                    </div>
+                    <div class="card mx-3 mb-5 shadow">
+                      <img src="./today.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Today [ <a href="https://today-web.netlify.app/" target="_blank">https://today-web.netlify.app/</a> ]</h5>
+                        <small class="card-text">
+                          Slicing Client's UI Desain to Responsive Landing Page that use Bootstrap for the style sheet. 
+                        </small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>        
         </div>
